@@ -73,7 +73,7 @@ inpRight.addEventListener('input', (e) => {
         e.target.value = 0;
     }
     e.target.value = e.target.value.replaceAll(',', ',');
-    getData(currentCurr, exchangeCurr, inpLeft, inpRight);
+    getData(exchangeCurr, currentCurr, inpRight, inpLeft);
 });
 
 inpLeft.addEventListener('keydown', acceptNumber);
